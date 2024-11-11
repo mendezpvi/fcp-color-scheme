@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Scheme</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="color-scheme">
+      <form action="#" class="color-scheme__form" id="color-scheme-form">
+        <input type="color" name="base-color" id="base-color" value="#F55A5A" class="color-scheme__input" aria-label="Select base color">
+        <select name="scheme-type" id="scheme-type" class="color-scheme__select" aria-label="Type of color scheme">
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit" class="color-scheme__btn">Get color scheme</button>
+      </form>
+
+      <div class="color-scheme__results">
+        <ul class="color-scheme__list" id="color-scheme-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Solo Project by <a href="https://v2.scrimba.com/courses" target="_blank" rel="noopener noreferrer" class="footer__cta">Scrimba</a> -
+      Developed by <a href="https://github.com/mendezpvi/fcp-color-scheme" target="_blank" rel="noopener noreferrer" class="footer__cta">VIMP</a></p>
+  </footer>
+</body>
+
+</html>
