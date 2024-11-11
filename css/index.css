@@ -1,0 +1,139 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #1C1C1C;
+  color: #D5D4D8;
+}
+
+.color-scheme {
+  margin-block: 2em;
+  block-size: 34.375rem;
+  inline-size: clamp(20.625rem, 90vw, 34.375rem);
+  background-color: #1F2937;
+  border-radius: 5px;
+}
+
+.color-scheme__form {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5em 1em;
+}
+
+.color-scheme__input,
+.color-scheme__select,
+.color-scheme__btn {
+  flex: 1;
+  block-size: 2.625rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.color-scheme__input {
+  flex-basis: 50px;
+  max-inline-size: 60.8px;
+  background-color: #D5D4D8;
+  border: 1px solid currentColor;
+}
+
+.color-scheme__select {
+  padding-inline: 1em;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: #D5D4D8;
+}
+
+.color-scheme__select option {
+  background-color: #1F2937;
+  color: #D5D4D8;
+}
+
+.color-scheme__btn {
+  flex-basis: max-content;
+  font-size: .75rem;
+  font-weight: 500;
+  background-color: #3D4B60;
+  border: none;
+  color: #fff;
+  transition-property: background-color, transform;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.color-scheme__results {
+  block-size: calc(100% - 7.75rem);
+}
+
+.color-scheme__list {
+  block-size: 90%;
+  display: flex;
+}
+
+.color-scheme__item {
+  position: relative;
+  flex-grow: 1;
+}
+
+.color-scheme__hex {
+  font-size: .75rem;
+  font-weight: 500;
+  color: #D5D4D8;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer {
+  padding-block: 1em;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.footer__cta {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline wavy;
+  text-underline-offset: 3px;
+}
+
+
+/* MEDIA QUERY */
+
+@media (width >= 29rem) {
+  .color-scheme__btn {
+    max-inline-size: 7.7rem;
+  }
+  .color-scheme__results {
+    block-size: calc(100% - 74px);
+  }
+}
+
+
+/* STATES */
+
+.color-scheme__btn:active {
+  transform: scale(.95);
+}
+
+.footer__cta:focus-visible {
+  text-decoration: none;
+}
+
+@media (hover:hover) {
+  .color-scheme__btn:hover {
+    background-color: #D5D4D8;
+    color: #1F2937;
+  }
+
+  .footer__cta:hover {
+    text-decoration: none;
+  }
+}

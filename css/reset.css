@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
